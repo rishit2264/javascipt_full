@@ -12,3 +12,32 @@ console.dir(document.body); // gives properties of body
 console.log(document.body);  //prints the body.
 
 document.body.childNodes[3].innerText = "abcd";   // here we are accessing the 3rd child ie h4 child node of body using document in js.
+
+
+//selecting elements using id in html.
+let heading = document.getElementById("heading");  //gives us the element with id = heading.
+console.log(heading);  //prints the element with id = heading.
+
+//selecting elements using class in html.(it is similar to array and we can access the elements using index.)
+let headingClass = document.getElementsByClassName("heading-class");
+console.log(headingClass);  //prints the elements with class = heading-class.
+
+//selecting elements using tag name in html.(it is similar to array and we can access the elements using index.)
+let headingTag = document.getElementsByTagName("h4");
+console.log(headingTag);  //prints the elements with tag name = h4. 
+
+//selecting elements using querySelector in html.(it takes in input and decides on itself  whether it is id, class or tag name) - returns Node List
+let firstEl = document.querySelector("p");  //1st element
+console.log(firstEl);  
+
+let allEl = document.querySelectorAll("p");  //all elements
+console.log(allEl); 
+
+// for argument in querySelector , id is mentioned with # and class is mentioned with . and tag name is mentioned as it is. 
+
+console.log(document.querySelector("body").firstChild);  // gives the first child of the body node. appears as #text because of white space bw nodes
+
+let body = document.querySelector("body");
+
+body.innerText; // gives all the inner  text inside body
+body.innerHTML; // gives all the inner html inside body
