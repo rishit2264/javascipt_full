@@ -2,3 +2,10 @@ h1 {
     color: blue;
         background-color: yellow;
 }
+
+#box {
+    height : 250px;
+    width : 100px;
+    background-color: red;
+    border: 1px solid black;
+}

@@ -41,3 +41,17 @@ let body = document.querySelector("body");
 
 body.innerText; // gives all the inner  text inside body
 body.innerHTML; // gives all the inner html inside body
+
+console.log(firstEl.getAttribute("class"));  // gives the class of the para element
+
+console.log(firstEl.setAttribute("class", "newclass"));  // sets the id of the body element
+
+
+let newBtn = document.createElement("Button");   // creates a new element button element in html using js.
+newBtn.innerText = "Click me";
+
+let div = document.querySelector("div");   // adds the element newbutton inside the div element in html.
+div.appendChild(newBtn);
+
+let para = document.querySelector("p");  
+para.remove();  //removes the para element from html.           
