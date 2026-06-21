@@ -54,4 +54,4 @@ let div = document.querySelector("div");   // adds the element newbutton inside 
 div.appendChild(newBtn);
 
 let para = document.querySelector("p");  
-para.remove();  //removes the para element from html.           
+para.remove();  //removes the para element from html.          
